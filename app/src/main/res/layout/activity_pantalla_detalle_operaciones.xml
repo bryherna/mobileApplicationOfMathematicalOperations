@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".Pantalla.Pantalla_detalle_operaciones">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/contorno_circular_edt"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_titulo_tema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="seleccione operacion matematica:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_nombre_operaciones"
+            android:layout_width="282dp"
+            android:layout_height="179dp"
+            android:background="@drawable/contorno_circular_edt_elemento_selector"
+            android:gravity="center|center_vertical">
+
+            <RadioButton
+                android:id="@+id/rb_sumar"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="SUMAR" />
+
+            <RadioButton
+                android:id="@+id/rb_restar"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="RESTAR" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Seleccione cantidad de problemas:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_cantidad_problemas"
+            android:layout_width="284dp"
+            android:layout_height="212dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_circular_edt_elemento_selector">
+
+            <RadioButton
+                android:id="@+id/rb_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/rb_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20" />
+
+            <RadioButton
+                android:id="@+id/rb_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30" />
+
+            <RadioButton
+                android:id="@+id/rb_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancelar_detalle_operacion"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#8BC34A"
+                android:drawableLeft="@drawable/ic_cancelar"
+                android:text="CANCELAR" />
+
+            <Button
+                android:id="@+id/btn_aceptar_detalle_operacion"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#8BC34A"
+                android:drawableLeft="@drawable/ic_okey"
+                android:text="ACEPTAR" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

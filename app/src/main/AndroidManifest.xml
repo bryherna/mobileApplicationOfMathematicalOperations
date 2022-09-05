@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prueba">
+
+    <application
+        android:name=".Clases.Aplicacion"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PRUEBA">
+        <activity
+            android:name=".PruebaToolbar"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Pantalla.Pantalla_detalle_operaciones"
+            android:exported="true" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pantalla.pantalla_datos_usuario"
+            android:exported="true" />
+        <activity
+            android:name=".Pantalla.Pantalla_sumar_restar"
+            android:exported="true" />
+        <activity
+            android:name=".OperacionesMatematicas"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

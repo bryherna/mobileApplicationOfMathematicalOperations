@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OperacionesMatematicas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMAR" />
+
+        <EditText
+            android:id="@+id/edt_primer_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="ingrese primer numero"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edt_segundo_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="ingrese segundo numero"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="RESULTADO"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_sumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="SUMAR" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_numeros_una_cifra"
+                android:layout_width="46dp"
+                android:layout_height="110dp"
+                android:text="5 8"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/tv_operacion_una_cifra"
+                android:layout_width="48dp"
+                android:layout_height="58dp"
+                android:text="-"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_numeros_dos_cifras"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:text="00 00"
+                android:textAlignment="textEnd"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/tv_operacion_dos_cifras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="60sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
